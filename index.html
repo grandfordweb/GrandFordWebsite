@@ -32,7 +32,7 @@
 <body>
     <div class="w3-top">
         <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-            <a href="index.html" class="w3-bar-item w3-button">Grandford Associates Consultants Ltd. <br> <div class="small">(Insurance Broker Company Licence No.: FB1550)</div> </a>
+            <a href="index.html" class="w3-bar-item w3-button" id="myTopnav">Grandford Associates Consultants Ltd. <br> <div class="small">(Insurance Broker Company Licence No.: FB1550)</div> </a>
             <div class="w3-right w3-hide-small">
                 <a href="about.html" class="w3-bar-item w3-button">About</a>
                 <a href="service.html" class="w3-bar-item w3-button">Service</a>
@@ -60,10 +60,10 @@
     <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
+      if (x.className === "w3-bar-item w3-button") {
+        x.className += "responsive";
       } else {
-        x.className = "topnav";
+        x.className = "w3-bar-item w3-button";
       }
     }
     </script>
